@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Emberhorn Hunt — a Monster Hunter-inspired hunting game</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; padding: 0; background: #0d1117; height: 100%; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  #wrap { text-align: center; }
+  canvas { width: min(96vw, 1280px); height: auto; background: #1d3320; border-radius: 8px; box-shadow: 0 8px 40px rgba(0,0,0,0.6); }
+  #help { color: #9aa5b5; font-size: 13px; margin: 10px 0 0; }
+  #help b { color: #ffd27a; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <p id="help"><b>WASD</b> move &nbsp;·&nbsp; <b>Mouse</b> aim &nbsp;·&nbsp; <b>Click / J</b> attack &nbsp;·&nbsp; <b>Space</b> dodge roll &nbsp;·&nbsp; <b>Q</b> potion &nbsp;·&nbsp; <b>E</b> carve &nbsp;·&nbsp; <b>P</b> pause &nbsp;·&nbsp; <b>Esc</b> abandon quest</p>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
